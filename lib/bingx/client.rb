@@ -9,7 +9,7 @@ module Bingx
     attr_accessor :api_key, :secret_key, :base_url
 
     base_uri 'https://open-api.bingx.com'
-    debug_output $stdout
+    # debug_output $stdout
 
     def initialize(api_key:, secret_key:)
       @api_key = api_key
@@ -39,7 +39,7 @@ module Bingx
       full_url = URI("#{base_url}#{endpoint}?#{params}&signature=#{signature(params)}")
 
       https = Net::HTTP.new(full_url.host, full_url.port)
-      https.set_debug_output($stdout)
+      # https.set_debug_output($stdout)
       https.use_ssl = true
 
       request = Net::HTTP::Post.new(full_url)

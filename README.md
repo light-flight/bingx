@@ -16,6 +16,8 @@ client = Bingx::Client.new(
   secret_key: '<your SECRET KEY>'
 )
 
+client.request(:get, '/openApi/swap/v2/quote/trades', symbol: 'BTC-USDT')
+
 client.get_user_balance
 
 client.trade_order_test(
