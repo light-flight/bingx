@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bingx (0.1.0)
+    bingx (0.1.1)
       httparty (~> 0.21.0)
 
 GEM
