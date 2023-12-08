@@ -15,6 +15,8 @@ client = Bingx::Client.new(
   api_key: '<your API KEY>',
   secret_key: '<your SECRET KEY>'
 )
+
+client.get_user_balance
 ```
 
 ## Development

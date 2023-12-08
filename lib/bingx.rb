@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
-require_relative 'bingx/version'
+require 'httparty'
 
-module Bingx
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative 'bingx/version'
+require_relative 'bingx/requests/account'
+require_relative 'bingx/client'
