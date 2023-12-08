@@ -4,4 +4,5 @@ require 'httparty'
 
 require_relative 'bingx/version'
 require_relative 'bingx/requests/account'
+require_relative 'bingx/requests/trade'
 require_relative 'bingx/client'

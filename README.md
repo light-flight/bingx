@@ -17,6 +17,14 @@ client = Bingx::Client.new(
 )
 
 client.get_user_balance
+
+client.trade_order_test(
+  symbol: 'ETH-USDT',
+  side: 'BUY',
+  positionSide: 'LONG',
+  type: 'MARKET',
+  quantity: 5
+)
 ```
 
 ## Development
